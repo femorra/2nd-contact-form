@@ -1,44 +1,69 @@
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
     <link rel="stylesheet" href="contact form 2.css">
-
 </head>
-
-
-<form action="/" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required><br><br>
-  
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required><br><br>
-  
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required><br><br>
-  
-    <label for="password2">Re-enter Password:</label>
-    <input type="password" id="password2" name="password2" required><br><br>
-  
-    <label for="gender">Gender:</label><br>
-    <input type="radio" id="male" name="gender" value="male" required>
-    <label for="male">Male</label><br>
-    <input type="radio" id="female" name="gender" value="female">
-    <label for="female">Female</label><br>
-    <input type="radio" id="other" name="gender" value="other">
-    <label for="other">Other</label><br><br>
-  
-    <label for="phone">Phone Number:</label>
-    <input type="tel" id="phone" name="phone" required><br><br>
-  
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required><br><br>
-  
-    <label for="college">College:</label>
-<select name="college" id="college">
-    <option value="UNIBEN">UNIBEN</option>
-  <option value="UNILAG">UNILAG</option>
-  <option value="UNIUYO">UNIUYO</option>
-  <option value="OSUA">OSUA</option>
-</select>
-    <input type="submit" value="Submit">
-  </form>
-  
+<body>
+    <section class="wrapper">
+        <div class="text-wrapper">
+            <h1>Contact Form</h1>
+        </div>
+        <form action="" method="post">
+            <div class="input-field">
+                <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" class="input" placeholder="Enter your Name">
+            </div>
+            <div class="input-field">
+                <label for="username">Username:</label>
+                    <input type="text" name="username" id="username" class="input" placeholder="Enter your Username">
+            </div>
+            <div class="input-field">
+                <label for="pass">Password:</label>
+                    <input type="password" name="password" id="pass" class="input" placeholder="Enter your Password" minlength="6" maxlength="8" required>
+            </div>
+            <div class="input-field">
+                <label for="pass">Re-type Password:</label>
+                    <input type="password" name="confirm password" id="cpw" class="input" placeholder="Enter your Password" minlength="6" maxlength="8" required>
+            </div>
+            <div class="input-field">
+                <label for="gender">Gender:</label>
+                    <div class="custom-radio">
+                        <input type="radio" name="gender" id="female" class="input"><label for="male" class="input-radio" required>Male</label>
+                        <input type="radio" name="gender" id="male" class="input"><label for="female" class="input-radio">Female</label>
+                    </div>
+            </div>
+            <div class="input-field">
+                <label for="skill">Techie Skill:</label>
+                    <div class="custom-check">
+                    <input type="checkbox" name="skill" id="html" class="input"><label for="html" class="input-check" required>HTML</label>
+                    <input type="checkbox" name="skill" id="css" class="input"><label for="css" class="input-check" required>CSS</label>
+                    <input type="checkbox" name="skill" id="javascript" class="input"><label for="javascript" class="input-check">Javascript</label>
+                    </div>
+                </div>
+            <div class="input-field">
+                <label for="phone">Phone Number:</label>
+                    <input type="tel" name="phone" id="phone" class="input" placeholder="Enter your Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            </div>
+            <div class="input-field">
+                <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" class="input" placeholder="Enter Email Address" pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required>
+            </div>
+            <div class="input-field">
+                <label for="uni">College:</label>
+                    <div class="custom-select">
+                    <select name="college" id="uni" required>
+                        <option value="" autofocus>Select your college</option>
+                        <option value="Harvard University">Harvard University</option>
+                        <option value="Howard University">Howard University</option>
+                    </select>
+                    </div>
+            </div>
+            <button value="Susbmit" class="btn">Submit</button>
+        </form>
+    </section>
+</body>
+</html>
