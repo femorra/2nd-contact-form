@@ -1,45 +1,173 @@
-form {
-    width: 500px;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@600&family=Manrope:wght@400;500;600&display=swap');
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Halant', serif;
+    font-family: 'Manrope', sans-serif;
 }
 
-  label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
+.wrapper{
+    max-width: 834px;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 76px auto;
+}
+h1{
+    font-family: 'Halant', serif;
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 96px;
+    letter-spacing: 0.5%;
+    margin-bottom: 59px;
+}
+
+form{
+
+}
+
+.input-field{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+label{
+    width: 270px;
+    font-family: 'Halant', serif;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 24px;
+    margin-right: 46px;
  }
 
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  input[type="tel"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+ .input{
+    width: 400px;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid #828282;
+    outline: none;
+    padding: 16px;
+ }
+
+ .input::placeholder{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
     font-size: 16px;
+    line-height: 24px;
+    color: #797979;
  }
 
-  input[type="radio"] {
-    margin-right: 10px;
+ .custom-radio{
+    display: block;
+    text-align: center;
+}
+.custom-radio .input-radio{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 24px;
  }
 
-  input[type="submit"] {
+ #female{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+ }
+
+ #male{
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    margin-left: 24px;
+ }
+.custom-check{
+    display: block;
+    text-align: center;
+}
+.custom-check .input-check{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 500;
+    line-height: 24px;
+    font-size: 24px;
+ }
+#html{
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    margin-right: 8px;
+ }
+
+ #css{
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-left: 24px;
+ }
+
+ #javascript{
+    width: 24px;
+    height: 24px;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-left: 24px;
+ }
+
+ .custom-select{
+    position: relative;
+    width: 400px;
+    height: 56px
+ }
+
+ .custom-select select{
+    appearance: none;
+    border-radius: 4px;
+    border: 1px solid #828282;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 16px;
     width: 100%;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    height: 100%;
+    outline: none;
  }
 
-  input[type="submit"]:hover {
-    background-color: #3e8e41;
+ .custom-select::before{
+    position: absolute;
+    content: "";
+    top: 22px;
+    right: 16px;
+    border: 8px solid;
+    border-color:  #828282 transparent transparent transparent;
+    pointer-events: none;
  }
- 
+
+ .input:focus, .custom-select select:focus{
+    border: 2px solid#000000;
+ }
+
+ .custom-select .selected{
+    color: #797979;
+ }
+
+ button{
+    position: relative;
+ }
+ .btn{
+    position: absolute;
+    left: 530px;
+    width: 400px;
+    height: 56px;
+    padding: 16px;
+    border-radius: 4px;
+    border: none;
+    background-color: #155EEF;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff;
+ }
